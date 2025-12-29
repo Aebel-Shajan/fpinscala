@@ -33,8 +33,12 @@ object MyProgram:
 
   // Exercise 1: Write a function to compute the nth fibonacci number
 
-  def fib(n: Int): Int = ???
-
+  def fib(n: Int): Int = 
+    @annotation.tailrec
+    def loop(n: Int, current: Int, previous: Int): Int = 
+      if n <= 0 then previous
+      else loop(n-1, previous + current, current)
+    loop(n, 1, 0)
   // This definition and `formatAbs` are very similar..
   private def formatFactorial(n: Int) =
     val msg = "The factorial of %d is %d."
