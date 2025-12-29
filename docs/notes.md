@@ -13,3 +13,7 @@
 * We can bring all of an object’s (nonprivate) members into scope by using the underscore syntax: `import MyModule._`
 * we can define functions inside any block, including within another function definition.
 * We can write while loops by hand in Scala, but it’s rarely necessary and considered bad form since it hinders good compositional style.
+* polymorphic functions
+* partial functions
+* def ??? = throw NotImplementedError
+
